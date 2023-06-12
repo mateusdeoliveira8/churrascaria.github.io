@@ -1,0 +1,211 @@
+body {
+  height: 2300px;
+  box-sizing: border-box;
+}
+body,
+ul,
+h1,
+h2,
+h3,
+p,
+a {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 4px;
+}
+
+.header {
+  gap: 20px;
+  padding: 20px;
+  margin: 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.botao-inicio {
+  background: orange;
+  padding-top: 100%;
+  padding-bottom: 1px;
+}
+
+.menu {
+  color: black;
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.menu{
+  font-size: 21px;
+}
+
+@media (max-width: 760px) {
+  .menu a {
+    gap: 15px;
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
+
+.primeira-carne {
+  height: 370px;
+  background-color: aqua;
+  background-image: url("./img/20220811_132622.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* __________________________________________________________________________________________________________ */
+/* main meio do site /  CARDAPIO*/
+
+.img01 {
+  width: 100%;
+
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.cardapio {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  grid-column: 1/-1;
+}
+
+.subtitulo-carne {
+  color: #ffd700;
+  font-size: 25px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 30px;
+  margin: 20px;
+  justify-content: center;
+}
+
+.subtitulo-carne {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.descricao-produto {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+@media (max-width: 540px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .img01 {
+    /* width: 100%; */
+    border-radius: 5px;
+    object-fit: cover;
+  }
+}
+
+/* __________________________________________________________________________________________________________
+galeria de fotos */
+.img3 img {
+  width: 499px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.subtitulo-galeria {
+  text-align: center;
+
+  margin-top: 40px;
+}
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(2, 500px);
+  justify-content: center;
+  margin: 20px;
+  gap: 12px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+@media (max-width: 540px) {
+  .galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+/* __________________________________________________________________________________________________________
+footer-rodape */
+input,
+textarea {
+  font-size: 1rem;
+  border-radius: 4px;
+  margin: 10px;
+  padding: 12px;
+  width: 230px;
+}
+button {
+  display: block;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.fale-conosco {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: white;
+  grid-column: 1/-1;
+}
+
+.informacoes {
+  font-size: 18px;
+  margin: 10px;
+}
+
+.rodape {
+  background: #2e2e2e;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+@media (max-width: 760px) {
+  .rodape {
+    grid-template-columns: 1fr;
+    margin-bottom: 60px;
+  }
+}
+
+/* _________________________________________________________________________________________________________
+direitos-reservados */
+h6 {
+  font-size: 15px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  margin: 10px;
+}
+/* mammama */
